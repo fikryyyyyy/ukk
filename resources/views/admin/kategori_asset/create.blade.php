@@ -12,7 +12,7 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('admin.kategori_asset.store') }}" method="POST" class="bg-white p-4 rounded shadow-sm">
+    <form action="{{ route('admin.kategori_asset.store') }}" method="POST" class="bg p-3">
         @csrf
         <div class="mb-4">
             <label for="kode_kategori_asset" class="form-label">Kode Kategori Asset</label>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="d-flex justify-content-between">
-            <button type="submit" class="btn btn-gradient">Simpan</button>
+            <button type="submit" class="btn btn-primary mt-3">Simpan</button>
             <a href="{{ route('admin.kategori_asset.index') }}" class="btn btn-secondary">Batal</a>
         </div>
     </form>
@@ -33,57 +33,7 @@
 @endsection
 
 <style>
-    /* Styling untuk form */
-    .form-control {
-        border-radius: 12px;
-        box-shadow: none;
-        border: 1px solid #ced4da;
-    }
-
-    .form-label {
-        font-weight: bold;
-        color: #495057;
-    }
-
-    /* Tombol simpan dengan gradien */
-    .btn-gradient {
-        background: linear-gradient(45deg, #4e73df, #1cc88a);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1rem;
-        border-radius: 25px;
-    }
-
-    .btn-gradient:hover {
-        background: linear-gradient(45deg, #2e59d9, #17a673);
-    }
-
-    .btn-secondary {
-        background-color: #6c757d;
-        border-color: #6c757d;
-        color: white;
-        font-size: 1rem;
-        padding: 10px 20px;
-        border-radius: 25px;
-    }
-
-    .btn-secondary:hover {
-        background-color: #5a6268;
-        border-color: #545b62;
-    }
-
-    /* Styling form container */
-    .form-container {
-        max-width: 600px;
-        margin: auto;
-        padding: 20px;
-        background-color: #f8f9fa;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .container {
-        max-width: 800px;
+    .bg{
+        background-color: #343a40;
     }
 </style>

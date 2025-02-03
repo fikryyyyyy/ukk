@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Edit Sub Kategori Asset</h1>
         <form action="{{ route('admin.sub_kategori_asset.update', $subKategoriAsset->id_sub_kategori_asset) }}"
-            method="POST">
+            method="POST" class="bg p-3">
             @csrf
             @method('PUT')
 
@@ -37,3 +37,9 @@
         </form>
     </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h4 style="font-weight: 600; color: #4A4A4A;">Tambah Depresiasi</h4>
     </div>
-    <form action="{{ route('admin.depresiasi.store') }}" method="POST" style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 10px; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);">
+    <form action="{{ route('admin.depresiasi.store') }}" method="POST" style="background: rgba(0, 0, 0, 0.8); padding: 2rem; border-radius: 10px; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);">
         @csrf
         <div class="mb-3">
             <label style="font-weight: 500; font-size: 1rem; color: #4A4A4A;">Lama Depresiasi (tahun)</label>

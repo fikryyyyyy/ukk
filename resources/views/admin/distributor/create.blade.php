@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Tambah Distributor</h1>
 
-        <form action="{{ route('admin.distributor.store') }}" method="POST">
+        <form action="{{ route('admin.distributor.store') }}" method="POST" class="bg p-3">
             @csrf
             <div class="mb-3">
                 <label for="nama_distributor" class="form-label">Nama Distributor</label>
@@ -46,3 +46,8 @@
         </form>
     </div>
 @endsection
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

@@ -4,7 +4,7 @@
 <div class="container">
     <h2>Edit Mutasi Lokasi</h2>
 
-    <form action="{{ route('admin.mutasi_lokasi.update', $mutasi->id_mutasi_lokasi) }}" method="POST">
+    <form action="{{ route('admin.mutasi_lokasi.update', $mutasi->id_mutasi_lokasi) }}" method="POST" class="bg p-3">
         @csrf
         @method('PUT')
 
@@ -39,3 +39,9 @@
     </form>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

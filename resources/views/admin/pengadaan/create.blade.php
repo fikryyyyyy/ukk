@@ -3,7 +3,7 @@
 @section('content')
     <h1>Tambah Pengadaan Baru</h1>
 
-    <form action="{{ route('admin.pengadaan.store') }}" method="POST">
+    <form action="{{ route('admin.pengadaan.store') }}" method="POST" class="bg p-3">
         @csrf
 
         <div class="form-group">
@@ -122,3 +122,9 @@
         <a href="{{ route('admin.pengadaan.index') }}" class="btn btn-secondary mt-3">Batal</a>
     </form>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

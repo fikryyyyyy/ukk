@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1>Tambah Barang</h1>
-    <form action="{{ route('admin.master_barang.store') }}" method="POST">
+    <form action="{{ route('admin.master_barang.store') }}" method="POST" class="bg p-3">
         @csrf
         <div class="mb-3">
             <label for="nama_barang" class="form-label">Nama Barang</label>
@@ -22,3 +22,9 @@
     </form>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

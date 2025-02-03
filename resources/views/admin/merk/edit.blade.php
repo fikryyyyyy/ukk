@@ -4,7 +4,7 @@
 <div class="container">
     <h1 class="mb-4">Edit Merk</h1>
 
-    <form action="{{ route('admin.merk.update', $merk->id_merk) }}" method="POST">
+    <form action="{{ route('admin.merk.update', $merk->id_merk) }}" method="POST" class="bg p-3">
         @csrf
         @method('PUT')
         <div class="mb-3">
@@ -26,3 +26,9 @@
     </form>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

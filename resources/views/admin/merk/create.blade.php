@@ -4,7 +4,7 @@
 <div class="container">
     <h1 class="mb-4">Tambah Merk</h1>
 
-    <form action="{{ route('admin.merk.store') }}" method="POST">
+    <form action="{{ route('admin.merk.store') }}" method="POST" class="bg p-3">
         @csrf
         <div class="mb-3">
             <label for="merk" class="form-label">Nama Merk</label>
@@ -25,3 +25,9 @@
     </form>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

@@ -5,7 +5,7 @@
     <h1 class="mb-4">Tambah Hitung Depresiasi</h1>
     <div class="card">
         <div class="card-body">
-            <form action="{{ route('admin.hitung_depresiasi.store') }}" method="POST">
+            <form action="{{ route('admin.hitung_depresiasi.store') }}" method="POST" class="bg p-3">
                 @csrf
 
                 <div class="mb-3">
@@ -36,3 +36,9 @@
     </div>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

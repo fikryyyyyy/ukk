@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <h1>Tambah Opname</h1>
-        <form action="{{ route('admin.opname.store') }}" method="POST">
+        <form action="{{ route('admin.opname.store') }}" method="POST" class="bg p-3">
             @csrf
             <div class="mb-3">
                 <label class="form-label">Pengadaan</label>
@@ -28,3 +28,8 @@
         </form>
     </div>
 @endsection
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

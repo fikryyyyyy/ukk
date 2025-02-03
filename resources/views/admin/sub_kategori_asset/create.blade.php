@@ -16,7 +16,7 @@
         <h1>Tambah Sub Kategori Asset</h1>
         
         <!-- Formulir Tambah Sub Kategori Asset -->
-        <form action="{{ route('admin.sub_kategori_asset.store') }}" method="POST">
+        <form action="{{ route('admin.sub_kategori_asset.store') }}" method="POST" class="bg p-3">
             @csrf
             <div class="form-group">
                 <label for="kode_sub_kategori_asset">Kode Sub Kategori Asset</label>
@@ -39,3 +39,8 @@
         </form>
     </div>
 @endsection
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

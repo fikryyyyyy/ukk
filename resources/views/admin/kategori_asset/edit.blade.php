@@ -4,7 +4,7 @@
 <div class="container mt-5">
     <h1 class="mb-4 text-center text-primary">Edit Kategori Asset</h1>
     
-    <form action="{{ route('admin.kategori_asset.update', $kategori_asset->id_kategori_asset) }}" method="POST" class="bg-white p-4 rounded shadow-sm">
+    <form action="{{ route('admin.kategori_asset.update', $kategori_asset->id_kategori_asset) }}" method="POST" class="bg-black p-4 rounded shadow-sm">
         @csrf
         @method('PUT')
         

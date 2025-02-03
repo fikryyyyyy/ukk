@@ -4,7 +4,7 @@
     <div class="container">
         <h1 class="mb-4">Edit Pengadaan</h1>
         <div class="card p-4 shadow-sm">
-            <form action="{{ route('admin.pengadaan.update', $pengadaan->id_pengadaan) }}" method="POST">
+            <form action="{{ route('admin.pengadaan.update', $pengadaan->id_pengadaan) }}" method="POST" class="bg p-3">
                 @csrf
                 @method('PUT')
 
@@ -41,3 +41,9 @@
         </div>
     </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

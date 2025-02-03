@@ -3,7 +3,7 @@
 @section('content')
 <div class="container mt-4">
     <h4>Edit Lokasi</h4>
-    <form action="{{ route('admin.lokasi.update', $lokasi->id_lokasi) }}" method="POST">
+    <form action="{{ route('admin.lokasi.update', $lokasi->id_lokasi) }}" method="POST" class="bg p-3">
         @csrf
         @method('PUT')
         <div class="mb-3">
@@ -23,3 +23,9 @@
     </form>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

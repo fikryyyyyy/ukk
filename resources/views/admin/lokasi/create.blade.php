@@ -6,7 +6,7 @@
     <div class="container">
         <h1>Tambah Lokasi Baru</h1>
 
-        <form action="{{ route('admin.lokasi.store') }}" method="POST">
+        <form action="{{ route('admin.lokasi.store') }}" method="POST" class="bg p-3">
             @csrf
             <div class="mb-3">
                 <label for="nama_lokasi" class="form-label">Nama Lokasi</label>
@@ -24,3 +24,9 @@
         </form>
     </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>

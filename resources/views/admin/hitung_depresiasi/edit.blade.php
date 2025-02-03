@@ -5,7 +5,7 @@
     <h4 class="mb-3">Edit Hitung Depresiasi</h4>
     <div class="card">
         <div class="card-body">
-            <form action="{{ route('admin.hitung_depresiasi.update', $hitungDepresiasi->id_hitung_depresiasi) }}" method="POST">
+            <form action="{{ route('admin.hitung_depresiasi.update', $hitungDepresiasi->id_hitung_depresiasi) }}" method="POST" class="bg p-3">
                 @csrf
                 @method('PUT')
 
@@ -47,3 +47,9 @@
     </div>
 </div>
 @endsection
+
+<style>
+    .bg{
+        background-color: #343a40;
+    }
+</style>
