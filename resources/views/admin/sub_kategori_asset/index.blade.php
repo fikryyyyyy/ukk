@@ -23,7 +23,7 @@
                 <th>#</th>
                 <th>kode sub kategori asset</th>
                 <th>Nama Sub Kategori Asset</th>
-                <th>Id Kategori Asset</th>
+                <th>Nama Kategori Asset</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -33,7 +33,7 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $subKategoriAsset->kode_sub_kategori_asset }}</td>
                     <td>{{ $subKategoriAsset->nama_sub_kategori }}</td>
-                    <td>{{ $subKategoriAsset->id_kategori_asset }}</td>
+                    <td>{{ $subKategoriAsset->KategoriAsset->kategori_asset }}</td>
                     <td class="d-flex">
                     <a href="{{ route('admin.sub_kategori_asset.edit', $subKategoriAsset->id_sub_kategori_asset) }}" class="btn btn-warning me-2">Edit</a>
                     <form action="{{ route('admin.sub_kategori_asset.update', $subKategoriAsset->id_sub_kategori_asset) }}" method="POST">
